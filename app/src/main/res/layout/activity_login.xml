@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_logo"
+        android:src="@drawable/logo"
+        android:layout_width="300dp"
+        android:layout_height="150dp" />
+    <EditText
+        android:paddingLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_logo"
+        android:background="@drawable/round"
+        android:id="@+id/login_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:paddingLeft="15dp"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_id"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round"
+        android:id="@+id/login_pw"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_pw"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn"
+        android:id="@+id/loginBtn"
+        android:text="Login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/loginBtnKakao"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_alignLeft="@id/loginBtn"
+        android:background="@drawable/kakaolink_btn_small"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:id="@+id/SignupBtn"
+        android:layout_toLeftOf="@id/FindBtn"
+        android:layout_below="@id/loginBtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="회원가입"/>
+    <TextView
+        android:id="@+id/FindBtn"
+        android:layout_alignRight="@id/loginBtn"
+        android:layout_below="@id/loginBtn"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Id/Pw 찾기"/>
+
+    <com.kakao.usermgmt.LoginButton
+        android:visibility="gone"
+        android:id="@+id/btn_kakao_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

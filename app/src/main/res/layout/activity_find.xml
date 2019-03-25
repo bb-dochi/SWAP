@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindActivity"
+    android:theme="@style/AppTheme"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="#9905D8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="id 찾기"/>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이름을 입력하세요"
+        android:id="@+id/id_editName"/>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="폰 번호를 입력하세요"
+        android:id="@+id/id_editPhone"/>
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="id찾기"
+        android:id="@+id/id_btnFind"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="#9905D8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="password 찾기"/>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="id를 입력하세요"
+        android:id="@+id/pw_editId"/>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="폰 번호를 입력하세요"
+        android:id="@+id/pw_editPhone"/>
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="password찾기"
+        android:id="@+id/pw_btnFind"/>
+
+</LinearLayout>

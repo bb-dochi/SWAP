@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/totalMenu"
+            android:icon="@drawable/ic_menu_headline"
+            android:title="전체보기" />
+        <item
+            android:id="@+id/dailyMenu"
+            android:icon="@drawable/ic_menu_shopping"
+            android:title="생활용품" />
+        <item
+            android:id="@+id/electMenu"
+            android:icon="@drawable/baseline_laptop_mac_black_18dp"
+            android:title="전자기기" />
+        <item
+            android:id="@+id/fashionMenu"
+            android:icon="@drawable/ic_menu_fashion"
+            android:title="패   션" />
+        <item
+            android:id="@+id/otherMenu"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="기   타" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/callMenu"
+                android:icon="@drawable/baseline_call_black_18dp"
+                android:title="문의하기" />
+        </menu>
+    </item>
+
+</menu>

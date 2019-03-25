@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Flag_Mypage"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="SWAP 님"
+            android:textSize="20sp"
+            android:id="@+id/mypage_tvuser"/>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_alignBaseline="@id/mypage_tvuser"
+            android:layout_toLeftOf="@id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정보수정"
+            android:id="@+id/btnUserEdit"
+            android:gravity="right"/>
+        <TextView
+            android:layout_marginRight="20dp"
+            android:layout_alignBaseline="@id/mypage_tvuser"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:id="@+id/btnLogout"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/mypage_btnboard"
+            android:text="작성한\n게시물"
+            android:layout_weight="1"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="3dip"
+            android:layout_height="50dip"
+            android:background="@drawable/hori_shadow" >
+        </View>
+        <Button
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/mypage_btncomment"
+            android:text="작성한\n덧글"
+            android:layout_weight="1"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="3dip"
+            android:layout_height="50dip"
+            android:background="@drawable/hori_shadow" >
+        </View>
+        <Button
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/mypage_btndeal"
+            android:text="거래\n내역"
+            android:layout_weight="1"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="3dip"
+            android:layout_height="50dip"
+            android:background="@drawable/hori_shadow" >
+        </View>
+        <Button
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/mypage_btnmark"
+            android:text="찜한\n게시글"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:background="@drawable/drop_shadow" >
+    </View>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mypage_listview"/>
+</LinearLayout>

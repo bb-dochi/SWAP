@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/list_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/star1"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:id="@+id/list_mark"/>
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/list_img"
+        android:layout_toEndOf="@+id/list_img"
+        >
+
+        <TextView
+            android:id="@+id/list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[category] title"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="25dp"
+                android:id="@+id/list_writer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="작성자 : SWAP"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/list_dealState"
+                android:layout_marginTop="25dp"
+                android:gravity="right"
+                android:textColor="#ff0000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/list_pWant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="선호대상 : SWAP"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:gravity="right"
+                android:textColor="#ff0000"
+                android:id="@+id/list_CommentCnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="댓글 수 : 5"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
